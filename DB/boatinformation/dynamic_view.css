@@ -1,0 +1,22 @@
+a:link { text-decoration:none;color: black;}
+a:visited { text-decoration:none; color: black;}
+
+.border_tbl{
+	padding: 5px 5px 5px 5px;
+    margin: 0px 0px 0px 0px;
+    border-bottom:1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+#border_tblhead{
+	padding: 5px 5px 5px 5px;
+    margin: 0px 0px 0px 0px;
+    border-bottom:1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+.pad_cell{
+	min-width:400px;
+	margin: 10px 10px 10px 10px;
+}
+
