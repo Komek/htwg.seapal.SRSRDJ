@@ -1,4 +1,5 @@
 <?php
+	
 	include("./dynamic_view.js");
 	$connection = include("../connection.php");
 	$select = "SELECT bootsname,registernr,segelzeichen,heimathafen,yachtclub,eigener,versicherung,rufzeichen,typ,konstrukteur,laenge,
@@ -9,9 +10,7 @@
 	echo "	<table border='1' rules='groups' cellspacing='10' cellpadding='10' >
 			<thead><tr><th>Bootsname</th><th>Inhaber</th><th>Typ</th><th>Konstrukteur</th><th>Laenge</th></tr></thead>
 			<tfoot>
-			<tr><td><input type='button' onclick='window.location.reload()' value='Aktualisieren'/></td>
-				<td><input type='button' onclick='delete.php' value='Loeschen'/></td>
-			</tr>
+			<tr><td colspan = 5><input type='button' onclick='delete_entry();' value='Ausgewaehlten Eintrag Loeschen'/></td></tr>
 			</tfoot>
 			<tbody>	";
 	while ($row = mysql_fetch_array($result)) {
@@ -43,6 +42,8 @@
 		echo "</tr>";
 	}
 	echo "</tbody></table>";
+	
+	
 	
 	mysql_close($connection);
 ?>

@@ -1,13 +1,15 @@
 <link rel="stylesheet" type="text/css" href="dynamic_view.css">
 <script type="text/javascript">
+	
 	function Change_Background(tableRow){
 		for (var i = 0; i < document.getElementsByTagName("tr").length; i++) {
 		    document.getElementsByTagName("tr")[i].style.backgroundColor = "white";
 		}
 		tableRow.style.backgroundColor = "#00BFFF";
 		
-		var nodes = tableRow.getElementsByTagName("td");
 		
+		var nodes = tableRow.getElementsByTagName("td");
+		selected_row_key=nodes[1].innerHTML;
 		document.getElementById("bootsname").value = nodes[0].innerHTML;
 		document.getElementById("registernr").value = nodes[1].innerHTML;
 		document.getElementById("segelzeichen").value = nodes[2].innerHTML;
@@ -32,5 +34,9 @@
 		document.getElementById("grosssegelgroesse").value = nodes[21].innerHTML;
 		document.getElementById("genuagroesse").value = nodes[22].innerHTML;
 		document.getElementById("spi").value = nodes[23].innerHTML;	
+	}
+	
+	function delete_entry(){
+		window.location.href = "./boatInformation.php?delete="+selected_row_key;
 	}
 </script>
