@@ -9,6 +9,8 @@
 /* Desktop (>= 480px)                                                            */
 /*********************************************************************************/
 
+
+
 /* Header */
 
 #header-wrapper {
@@ -17,19 +19,13 @@
 	/*background: url(images/img01.png) repeat*/
 	background-color: #00B9E8;
 }
-.homepage #header-wrapper {
-}
+
 
 #header {
 	overflow: hidden;
 }
 
-#test{
-		 vertical-align: middle;
-}
-#test1{
-		 vertical-align: middle;
-}
+
 
 /* Logo */
 
@@ -39,14 +35,14 @@
 
 #logo {
 	overflow: hidden;
-	height: 7.5em;
+	height: 6.3em;
 	text-shadow: 1px 1px 0px #FFFFFF;
 	text-align: center;
 
 }
 
 #seapal_logo{
-
+     height:auto;
 	 width:320px;
 	 vertical-align: middle;
 }
@@ -70,6 +66,8 @@
 	color: #7B7B7B;
 }
 
+
+
 /* Menu */
 
 #menu {
@@ -89,7 +87,7 @@
 #menu li {
 	display: inline-block;
 	padding: 0em 1.5em;
-	line-height: 3em;
+	line-height: 1.2em;
 }
 
 #menu a {
@@ -106,11 +104,12 @@
 
 #menu .current_page_item {
 	color: #FFFFFF;
+
 }
 
 #menu .current_page_item a {
-	background: #499D4A;
-	background: #000000 url(images/nav.png) repeat-x;
+	/*background: #499D4A;
+	background: #000000 url(images/nav.png) repeat-x;*/
 	color: #00B9E8;
 }
 
@@ -126,7 +125,7 @@
 
 #page {
 	padding: 6em 0em 0em 0em;
-	margin-top:3em;
+	margin-top:1em;
 
 }
 
@@ -138,7 +137,7 @@
 
 #banner {
 	overflow: hidden;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 }
 
 #banner .container {
@@ -168,7 +167,7 @@
 }
 
 #content h2 {
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 	text-transform: none;
 	font-size: 2.2em;
 	color: #2A2A2A;
@@ -183,7 +182,9 @@
 }
 
 #content img {
-	padding: 0em 0em 1.25em 0em;
+	padding: 2em 0em 2em 0em;
+	position:relative;
+	left: 50px;
 }
 
 #content a img {
@@ -273,6 +274,7 @@
 #marketing {
 	overflow: hidden;
 	color: #6F6F6F;
+	
 }
 
 #marketing .divider {
@@ -282,18 +284,18 @@
 }
 
 #marketing .title {
-	padding: 1.2em;
+	padding: 1.1em;
 	background: #00B9E8;
 	border-radius: 5px 5px 0px 0px;
 	text-transform: none;
-	font-size: 1.35em;
+	font-size: 1.4em;
 	color: #FFFFFF;
 }
 
 #marketing .subtitle {
-	padding-bottom: 1em;
 	font-weight: bold;
 	color: #838383;
+	line-height:1.3em;
 }
 
 #marketing .mbox-style {
@@ -302,10 +304,11 @@
   	border-width:1px;
   	border-style:solid;
   	border-color:#b0c4de;
+  	height:350px;
 }
 
 #marketing .mbox-style .content {
-	padding: 2em 1.5em 1em 1.5em;
+	padding: 1em 1em 1em 1em;
 	/*text-shadow: 1px 1px 1px #000000;*/
 }
 
