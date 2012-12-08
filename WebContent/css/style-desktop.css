@@ -304,7 +304,7 @@
   	border-width:1px;
   	border-style:solid;
   	border-color:#b0c4de;
-  	height:350px;
+  	height:auto;
 }
 
 #marketing .mbox-style .content {

@@ -99,11 +99,11 @@ strong {
 
 .button-style2 a {
 	display: inline-block;
-	height: 3em;
-	margin-top: 0.5 em;
+	height: 2.5em;
+	margin-top: 0.0 em;
 	padding: 0em 1.25em ;
 	border-radius: 0px 5px 0px 5px;
-	line-height: 3em;
+	line-height: 2em;
 	text-decoration: none;
 	font-size: 1em;
 	color: #222222;

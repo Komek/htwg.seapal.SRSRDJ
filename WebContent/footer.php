@@ -58,12 +58,7 @@
 		
 		
 					<p>&#8203</p>
-					<?php
-					$hit_count = @file_get_contents('count.txt'); 
-					echo "<h3>Besucher: $hit_count</h3>"; 
-					$hit_count++; 
-					@file_put_contents('count.txt', $hit_count); 
-					?>
+					
 				</section>
 			</div>
 			<div class="4u" id="box4">

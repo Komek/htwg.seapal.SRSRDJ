@@ -15,14 +15,25 @@
 					<div class="mobileUI-main-content" id="content">
 						<section>
 							<div class="post">
-								<a name="Contact_SeaPal"><h2>IBN</h2></a>
+								<a name="IBN"><h2>IBN</h2></a>
 								<p>IBN Redaktion </p>
-								<p>Hans-Dieter Möhlhenrich</p>
+								<p>Hans-Dieter M&ouml;hlhenrich</p>
 								<p>Malvine-Schiesser-Weg 3</p>
 								<p>78315 Radolfzell</p>
 								<p>Germany</p>
-
-								
+								<p><a href="www.ibn-online.de">www.ibn-online.de</a></p>
+								<p>ibn at ibn-online.de</p>
+								<br>
+								<br>
+								<a name="HTWG Constance"><h2>HTWG Constance</h2></a>
+								<p>HTWG Konstanz</p>
+								<p>Informatik</p>
+								<p>Prof. Dr. Marko Boger</p>
+								<p>Brauneggerstr. 55</p>
+								<p>78462 Konstanz</p>
+								<p>Germany</p>
+								<p><a href="www.htwg-konstanz.de">www.htwg-konstanz.de.de</a></p>
+								<p>marko.boger at htwg-konstanz.de</p>
 							</div>
 						</section>
 					</div>
@@ -32,10 +43,10 @@
 						<h2>Quick Access</h2>
 						<ul class="style7">
 							<li class="first">
-								<a href="userguide.php">User Guide</a>
+								<a href="contact.php#IBN">IBN</a>
 							</li>
-							<li>
-								<a href="userguide.php#Starting_SeaPal">Contact us</a>
+							<li style="border-bottom: none;"> 
+								<a href="contact.php#HTWG Constance">HTWG Constance</a>
 							</li>
 						
 					</section>

@@ -37,8 +37,8 @@
 							<li class="first">
 								<a href="userguide.php">User Guide</a>
 							</li>
-							<li>
-								<a href="userguide.php#Starting_SeaPal">Contact us</a>
+							<li style="border-bottom: none;">
+								<a href="contact.php">Contact us</a>
 							</li>
 						
 					</section>

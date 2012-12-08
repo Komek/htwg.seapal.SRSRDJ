@@ -85,6 +85,7 @@ include("header.php");
 					</section>
 				</div>
 				<div class="post">
+			   				<p> &nbsp;</p>
 							<p> &nbsp;</p>
 							<p>Warning</p>
 							<p>SeaPal is a valuable addition to your navigational equipment, but no replacement. Always use official sea maps in conjunction. All positions are provided so that a transition to paper sea maps is simple. The responsibility for the proper use lies with the skipper. The manufacturer of SeaPal assume no liability.</p>
