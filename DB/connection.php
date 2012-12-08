@@ -1,5 +1,5 @@
 <?php 
-	$connection = mysql_connect("localhost","testuser","test");
+	$connection = mysql_connect("localhost","test","test");
 	if(!$connection){
 		echo "Could not connect: " . mysql_error();
 	}
