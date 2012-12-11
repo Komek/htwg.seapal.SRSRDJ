@@ -1,15 +1,11 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>Boat Information</title>
-	<script type='text/javascript' src='./dynamic_view.js'></script>
-	<script type="text/javascript" src="./boatRegEx.js"></script>
-</head>
-<body>
-	<h1>Boat Information</h1>
-	<?php
-		if (isset($_POST['submit'])) {
-			$connection = include("../connection.php");
+<?php
+    $connection = include("../../connection.php");
+	
+	$action = $_POST['action'];
+	
+	switch($action){
+		case('insert'):
+			
 			$insert = "INSERT INTO boatinformation (Registernr,Bootsname,Segelzeichen,Heimathafen,
 					 Yachtclub,Eigener,Versicherung,Rufzeichen,Typ,Konstrukteur,Laenge,Breite,
 					 Tiefgang,Masthoehe,Verdraengung,FligArt,Baujahr,Motor,Tankgroesse,Wassertankgroesse,
@@ -31,22 +27,21 @@
 				echo "Could not insert: " . mysql_error();
 			}
 			
-			mysql_close($connection);
-		}elseif(isset($_GET['delete'])){
-			$connection = include("../connection.php");
-			$delete ="DELETE FROM boatinformation WHERE Registernr = '$_GET[delete]'";
+			break;
+		
+		case('delete'):
+			
+			$delete ="DELETE FROM boatinformation WHERE Registernr = '$_POST[key]'";
 			if(!mysql_query($delete)){
 				echo "Could not delete: " . mysql_error();
 			}
+			
+			break;
+	}
+	
+	
+	
+			
 			mysql_close($connection);
-		
-		}
-
-
-
-
-		include("./boatForm.html");
-		include("./dynamic_view.php");
+			
 ?>
-	</body>
-</html>

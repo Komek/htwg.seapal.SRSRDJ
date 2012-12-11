@@ -38,7 +38,7 @@ function delete_entry(){
 
 	$.ajax({
 		type: 'POST',
-		url: 'process.php',
+		url: '../process.php',
 		data: {
 			'action' : 'delete',
 			'key' : selected_row_key					

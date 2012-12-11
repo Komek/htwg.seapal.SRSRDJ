@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Trip Information</title>
+</head>
+<body>
+	<h1>Trip Information</h1>
+	<form>
+	<fieldset>
+	<table cellspacing="10" cellpadding="10">
+		<tr>
+			<td><label for="trip title">Trip Title:</label></td>
+			<td><input type="text" name="trip title" id="trip title" tabindex="1"/></td>
+		</tr>
+		<tr>
+			<td><label for="von">Von:</label></td>
+			<td><input type="text" name="von" id="von" tabindex="2"/></td>
+			<td rowspan = "3"><label for="crew">Crew:</label></td>
+			<td rowspan = "3"><textarea name="crew" cols="30" rows="8" tabindex="5" id="crew"></textarea></td>
+			<td><label for="start">Start:</label></td>
+			<td><input type="text" name="start" id="start" tabindex="6"/></td>
+		</tr>
+		<tr>
+			<td><label for="nach">Nach:</label></td>
+			<td><input type="text" name="nach" id="nach" tabindex="3"/></td>
+			<td><label for="ende">Ende:</label></td>
+			<td><input type="text" name="ende" id="ende" tabindex="7"/></td>
+			<td><label for="motormin">Motor(min):</label></td>
+			<td><input type="text" name="motormin" id="motormin" tabindex="9"/></td>
+		</tr>	
+		<tr>
+			<td><label for="skipper">Skipper:</label></td>
+			<td><input type="text" name="skipper" id="skipper" tabindex="4"/></td>
+			<td><label for="dauer">Dauer:</label></td>
+			<td><input type="text" name="dauer" id="dauer" tabindex="8"/></td>
+			<td><label for="tank gefuellt">Tank gefüllt?</label></td>
+			<td><input type="checkbox" name="tank gefuellt" id="tank gefuellt" tabindex="10"/></td>
+		</tr>	
+	</table>
+	
+	</fieldset>
+	<fieldset>
+	<table>
+		<thead>
+			<tr><th>Notes:</th></tr>
+		</thead>	
+		<tbody>
+			<td><textarea name="notes" cols="40" rows="15"></textarea></td>
+		</tbody>
+	</table>
+	</fieldset>
+
+	
+	</form>
+	
+	<input type="submit" name="submit" value="Send" />
+	<input type="reset" name="reset" value="Reset" />
+
+	
+</body>
+</html>

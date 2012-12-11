@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Entry Info</title>
+	<meta name="description" content="Entry information" />
+	<meta name="autor" content="Stephen Regenscheit" />
+</head>
+<body>
+	
+	<label for="name">Name</label>
+	<input type="text" name="name" id="name" /> <br>
+	
+	<label for="position">Position</label>
+	<input type="text" name="positionNorth°" id="position" />°
+	<input type="text" name="positionNorth'"  />'
+	<input type="text" name="positionNorth''" />"N
+	
+	<input type="text" name="positionEast°" />°
+	<input type="text" name="positionEast'" />'
+	<input type="text" name="positionEast''" />"E
+	
+	<label for="cog">COG</label>
+	<input type="text" name="cog" id="cog" />
+	
+	<label for="sog">SOG</label>
+	<input type="text" name="sog" id="sog" />at HIER FEHLT NOCH DIE ZEIT! <br>
+	
+	<label for="btm">BTM</label>
+	<input type="text" name="btm" id="btm" value="0°" />
+	
+	<label for="dtm">DTM</label>
+	<input type="text" name="dtm" id="dtm" value="0.0000 nm" />
+	
+	<label for="fahrtNach">Fahrt nach</label>
+	<select name="fahrtNach" id="fahrtNach">
+		<option value="Mark1" selected="selected">Mark 1</option>
+		<option value="Mark2">Mark 2</option>
+		<option value="Mark3">Mark 3</option>
+	</select> <br>
+	
+	<label for="manoever">Manöver</label>
+	<select name="manoever" id="manoever">
+		<option value="-" selected="selected">-</option>
+		<option value="Track">Track</option>
+		<option value="Jibe">Jibe</option>
+		<option value="Lay to">Lay to</option>
+		<option value="Set Sails">Set Sails</option>
+		<option value="Change Sails">Change Sails</option>
+		<option value="Sails down">Sails down</option>
+		<option value="Reff">Reff</option>
+		<option value="Anker up">Anker up</option>
+		<option value="Anker down">Anker down</option>
+	</select>
+	
+	<label for="vorsegel">Vorsegel</label>
+	<select name="vorsegel" id="vorsegel">
+		<option value ="-" selected="selected">-</option>
+		<option value="Genua1">Genua1</option>
+		<option value="Genua2">Genua2</option>
+		<option value="Genua3">Genua3</option>
+		<option value="Fock">Fock</option>
+		<option value="Storm Fock">Storm Fock</option>
+		<option value="Blister">Blister</option>
+		<option value="Spinaker">Spinaker</option>
+	</select>
+	
+	<label for="großsegel">Großsegel</label>
+	<select name="großsegel" id="großsegel">
+		<option value="-" selected="selected">-</option>
+		<option value="full">full</option>
+		<option value="reef1">reef 1</option>
+		<option value="reef2">reef 2</option>
+	</select>
+	
+	<table>
+		<tr><th>Notes</th></tr>
+		<tr><td><textarea name="notes" cols="40" rows="15"></textarea></td></tr>
+	</table>
+	
+	
+
+</body>
+</html>

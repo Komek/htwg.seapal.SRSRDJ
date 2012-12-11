@@ -35,5 +35,5 @@ function Change_Background(tableRow){
 }
 
 function delete_entry(){
-	window.location.href = "./boatInformation.php?delete="+selected_row_key;
+	window.location.href = "./index.php?delete="+selected_row_key;
 }

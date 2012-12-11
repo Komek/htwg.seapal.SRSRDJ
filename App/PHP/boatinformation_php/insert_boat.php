@@ -1,11 +1,5 @@
 <?php
-    $connection = include("../connection.php");
-	
-	$action = $_POST['action'];
-	
-	switch($action){
-		case('insert'):
-			
+	$connection = include("../../connection.php");
 			$insert = "INSERT INTO boatinformation (Registernr,Bootsname,Segelzeichen,Heimathafen,
 					 Yachtclub,Eigener,Versicherung,Rufzeichen,Typ,Konstrukteur,Laenge,Breite,
 					 Tiefgang,Masthoehe,Verdraengung,FligArt,Baujahr,Motor,Tankgroesse,Wassertankgroesse,
@@ -27,21 +21,5 @@
 				echo "Could not insert: " . mysql_error();
 			}
 			
-			break;
-		
-		case('delete'):
-			
-			$delete ="DELETE FROM boatinformation WHERE Registernr = '$_POST[key]'";
-			if(!mysql_query($delete)){
-				echo "Could not delete: " . mysql_error();
-			}
-			
-			break;
-	}
-	
-	
-	
-			
 			mysql_close($connection);
-			
 ?>

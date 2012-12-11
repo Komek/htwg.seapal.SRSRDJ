@@ -1,26 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>Boat Information</title>
-	<script type='text/javascript' src='./dynamic_view.js'></script>
-	<script type="text/javascript" src="./boatRegEx.js"></script>
-</head>
-<body>
-	<h1>Boat Information</h1>
-	<?php
-		if (isset($_POST['submit'])) {
-			include("../Fassade.php");
-			
-			Fassade::addBoat($_POST[]);
-			
-		}elseif(isset($_GET['delete'])){
-			
-		
-		}
-
-?>
-
-<form id="form" action="./BoatInfo_UI.php" method="post">
+<form id="form" action="./index.php" method="post">
 	<fieldset ><legend align="center">Logbuch</legend>  
 	<table cellspacing="10" cellpadding="10">
 		<tr><td><label for="bootsname">Bootsname:</label></td>
@@ -132,5 +110,3 @@
 		<input type="reset" value="Reset" name="reset" />	
 	</fieldset>
 	</form>	
-	</body>
-</html>

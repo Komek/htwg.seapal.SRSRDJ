@@ -1,7 +1,6 @@
 <?php
-	
-	
-	$connection = include("../connection.php");
+function dynamic_view(){
+	$connection = include("../../connection.php");
 	$select = "SELECT bootsname,registernr,segelzeichen,heimathafen,yachtclub,eigener,versicherung,rufzeichen,typ,konstrukteur,laenge,
     						breite,tiefgang,masthoehe,verdraengung,fligArt,baujahr,motor,tankgroesse,wassertankgroesse,abwassertankgroesse,
     						grosssegelgroesse,genuagroesse,SpiSizeSpiegroesse FROM boatinformation";
@@ -43,4 +42,5 @@
 	}
 	echo "</tbody></table>";
 	mysql_close($connection);
+}
 ?>
