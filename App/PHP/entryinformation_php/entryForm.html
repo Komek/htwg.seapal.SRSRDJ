@@ -1,21 +1,13 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>Entry Info</title>
-	<meta name="description" content="Entry information" />
-	<meta name="autor" content="Stephen Regenscheit" />
-</head>
-<body>
-	
+<form id="entryForm" action="" method="post">
 	<label for="name">Name</label>
 	<input type="text" name="name" id="name" /> <br>
 	
 	<label for="position">Position</label>
-	<input type="text" name="positionNorth°" id="position" />°
+	<input type="text" name="positionNorthï¿½" id="position" />ï¿½
 	<input type="text" name="positionNorth'"  />'
 	<input type="text" name="positionNorth''" />"N
 	
-	<input type="text" name="positionEast°" />°
+	<input type="text" name="positionEastï¿½" />ï¿½
 	<input type="text" name="positionEast'" />'
 	<input type="text" name="positionEast''" />"E
 	
@@ -26,7 +18,7 @@
 	<input type="text" name="sog" id="sog" />at HIER FEHLT NOCH DIE ZEIT! <br>
 	
 	<label for="btm">BTM</label>
-	<input type="text" name="btm" id="btm" value="0°" />
+	<input type="text" name="btm" id="btm" value="0ï¿½" />
 	
 	<label for="dtm">DTM</label>
 	<input type="text" name="dtm" id="dtm" value="0.0000 nm" />
@@ -38,7 +30,7 @@
 		<option value="Mark3">Mark 3</option>
 	</select> <br>
 	
-	<label for="manoever">Manöver</label>
+	<label for="manoever">Manï¿½ver</label>
 	<select name="manoever" id="manoever">
 		<option value="-" selected="selected">-</option>
 		<option value="Track">Track</option>
@@ -64,8 +56,8 @@
 		<option value="Spinaker">Spinaker</option>
 	</select>
 	
-	<label for="großsegel">Großsegel</label>
-	<select name="großsegel" id="großsegel">
+	<label for="groï¿½segel">Groï¿½segel</label>
+	<select name="groï¿½segel" id="groï¿½segel">
 		<option value="-" selected="selected">-</option>
 		<option value="full">full</option>
 		<option value="reef1">reef 1</option>
@@ -76,8 +68,6 @@
 		<tr><th>Notes</th></tr>
 		<tr><td><textarea name="notes" cols="40" rows="15"></textarea></td></tr>
 	</table>
-	
-	
-
-</body>
-</html>
+	<input type="submit" name="submit" value="Send" />
+	<input type="reset" name="reset" value="Reset" />
+</form>

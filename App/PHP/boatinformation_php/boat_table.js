@@ -1,4 +1,3 @@
-
 function Change_Background(tableRow){
 	for (var i = 0; i < document.getElementsByTagName("tr").length; i++) {
 	    document.getElementsByTagName("tr")[i].style.backgroundColor = "white";
@@ -13,7 +12,7 @@ function Change_Background(tableRow){
 	document.getElementById("segelzeichen").value = nodes[2].innerHTML;
 	document.getElementById("heimathafen").value = nodes[3].innerHTML;
 	document.getElementById("yachtclub").value = nodes[4].innerHTML;
-	document.getElementById("eigener").value = nodes[5].innerHTML;
+	document.getElementById("eigner").value = nodes[5].innerHTML;
 	document.getElementById("versicherung").value = nodes[6].innerHTML;
 	document.getElementById("rufzeichen").value = nodes[7].innerHTML;
 	document.getElementById("typ").value = nodes[8].innerHTML;
@@ -23,7 +22,7 @@ function Change_Background(tableRow){
 	document.getElementById("tiefgang").value = nodes[12].innerHTML;
 	document.getElementById("masthoehe").value = nodes[13].innerHTML;
 	document.getElementById("verdraengung").value = nodes[14].innerHTML;
-	document.getElementById("fligArt").value = nodes[15].innerHTML;
+	document.getElementById("rigArt").value = nodes[15].innerHTML;
 	document.getElementById("baujahr").value = nodes[16].innerHTML;
 	document.getElementById("motor").value = nodes[17].innerHTML;
 	document.getElementById("tankgroesse").value = nodes[18].innerHTML;
