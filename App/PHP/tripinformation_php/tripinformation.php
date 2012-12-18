@@ -12,6 +12,7 @@
 	 
 	if (isset($_GET['val'])) {
 		include("./select_trip.php");
+		include("./entry_table.php");
 	}
 	elseif (isset($_GET['newval'])) {
 		echo "<script type='text/javascript'>set_foreign_key('$_GET[newval]');</script>";
@@ -22,7 +23,7 @@
 	elseif (isset($_GET['delete'])) {
 		
 	}
-	include("./entry_table.php");
+	
 	mysql_close($connection);
 ?>
 </body>

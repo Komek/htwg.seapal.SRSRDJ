@@ -23,7 +23,7 @@
 			<tfoot>
 			<tr>
 				<td><input type='button' onclick='delete_entry();' value='Trip Loeschen'/></td>
-				<td><input type='button' onclick='forward();' value='Trip anlegen'/></td>
+				<td><a style='text-decoration:none' href='../tripinformation_php/tripinformation.php?newval=$_GET[val]'><input type='button' value='Trip anlegen'/></a></td>
 			</tr>
 			</tfoot>
 			<tbody>	";

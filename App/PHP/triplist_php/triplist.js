@@ -11,6 +11,3 @@ function Change_Background(tableRow){
 function delete_entry(){
 	window.location.href = "./triplist.php?val="+selected_row_fk+"&delete="+selected_row_key;
 }
-function forward(){
-	window.location.href = "../tripinformation_php/tripinformation.php?newval="+selected_row_fk;
-}
