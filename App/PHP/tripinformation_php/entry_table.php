@@ -10,7 +10,7 @@
 			<tfoot>
 			<tr>
 				<td><input type='button' onclick='delete_entry();' value='Loeschen'/></td>
-				<td><input type='button' onclick='' value='Neuer Eintrag'/></td>
+				<td><a style='text-decoration:none' href='../entryinformation_php/entryinformation.php?val=".$_GET['val']."'><input type='button' value='Neuer Eintrag'/></a></td>
 			</tr>
 			</tfoot>
 			<tbody>	";

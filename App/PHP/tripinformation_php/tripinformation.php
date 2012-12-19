@@ -11,17 +11,16 @@
 	$connection = include("../../connection.php"); 
 	 
 	if (isset($_GET['val'])) {
+		//Vorhandenen Trip anzeigen
 		include("./select_trip.php");
 		include("./entry_table.php");
 	}
 	elseif (isset($_GET['newval'])) {
+		//Neuen Trip anlegen
 		echo "<script type='text/javascript'>set_foreign_key('$_GET[newval]');</script>";
 	}
-	elseif (isset($_POST['submit'])) {
-		include("./insert_trip.php");	
-	}
-	elseif (isset($_GET['delete'])) {
-		
+	elseif ($_POST['submit']) {
+		include ("./insert_trip.php");
 	}
 	
 	mysql_close($connection);

@@ -1,13 +1,14 @@
-<form id="entryForm" action="" method="post">
+<form id="entryForm" action="../tripinformation_php/tripinformation.php" method="post">
+	<input style='display:none' type="text" name="triptitle" id="triptitle"/>
 	<label for="name">Name</label>
 	<input type="text" name="name" id="name" /> <br>
 	
 	<label for="position">Position</label>
-	<input type="text" name="positionNorth�" id="position" />�
+	<input type="text" name="positionNorth°" id="position" />&deg;
 	<input type="text" name="positionNorth'"  />'
 	<input type="text" name="positionNorth''" />"N
 	
-	<input type="text" name="positionEast�" />�
+	<input type="text" name="positionEast°" />&deg;
 	<input type="text" name="positionEast'" />'
 	<input type="text" name="positionEast''" />"E
 	
@@ -18,10 +19,10 @@
 	<input type="text" name="sog" id="sog" />at HIER FEHLT NOCH DIE ZEIT! <br>
 	
 	<label for="btm">BTM</label>
-	<input type="text" name="btm" id="btm" value="0�" />
+	<input type="text" name="btm" id="btm" value="0000" />
 	
 	<label for="dtm">DTM</label>
-	<input type="text" name="dtm" id="dtm" value="0.0000 nm" />
+	<input type="text" name="dtm" id="dtm" value="0.0000" />
 	
 	<label for="fahrtNach">Fahrt nach</label>
 	<select name="fahrtNach" id="fahrtNach">
@@ -30,7 +31,7 @@
 		<option value="Mark3">Mark 3</option>
 	</select> <br>
 	
-	<label for="manoever">Man�ver</label>
+	<label for="manoever">Manoever</label>
 	<select name="manoever" id="manoever">
 		<option value="-" selected="selected">-</option>
 		<option value="Track">Track</option>
@@ -56,8 +57,8 @@
 		<option value="Spinaker">Spinaker</option>
 	</select>
 	
-	<label for="gro�segel">Gro�segel</label>
-	<select name="gro�segel" id="gro�segel">
+	<label for="grosssegel">Grosssegel</label>
+	<select name="grosssegel" id="grosssegel">
 		<option value="-" selected="selected">-</option>
 		<option value="full">full</option>
 		<option value="reef1">reef 1</option>
@@ -68,6 +69,6 @@
 		<tr><th>Notes</th></tr>
 		<tr><td><textarea name="notes" cols="40" rows="15"></textarea></td></tr>
 	</table>
-	<input type="submit" name="submit" value="Send" />
-	<input type="reset" name="reset" value="Reset" />
+	<input type="submit" name="submit" value="Speichern" />
+	<input type="reset" name="reset" value="Zuruecksetzen" />
 </form>
