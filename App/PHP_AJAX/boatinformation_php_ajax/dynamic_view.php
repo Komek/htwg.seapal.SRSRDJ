@@ -1,9 +1,8 @@
 <?php
-function dynamic_view(){
 	$connection = include("../../connection.php");
-	$select = "SELECT bootsname,registernr,segelzeichen,heimathafen,yachtclub,eigener,versicherung,rufzeichen,typ,konstrukteur,laenge,
-    						breite,tiefgang,masthoehe,verdraengung,fligArt,baujahr,motor,tankgroesse,wassertankgroesse,abwassertankgroesse,
-    						grosssegelgroesse,genuagroesse,SpiSizeSpiegroesse FROM boatinformation";
+	$select = "SELECT bootsname,registernr,segelzeichen,heimathafen,yachtclub,eigner,versicherung,rufzeichen,typ,konstrukteur,laenge,
+    						breite,tiefgang,masthoehe,verdraengung,rigArt,baujahr,motor,tankgroesse,wassertankgroesse,abwassertankgroesse,
+    						grosssegelgroesse,genuagroesse,spi FROM boatinformation";
     $result = mysql_query($select) or die ("MySQL ERROR: " . mysql_error());
 	
 	echo "	<table border='1' rules='groups' cellspacing='10' cellpadding='10' >
@@ -19,7 +18,7 @@ function dynamic_view(){
 		echo "<td style='display:none'>".$row['segelzeichen']."</td>";
 		echo "<td style='display:none'>".$row['heimathafen']."</td>";
 		echo "<td style='display:none'>".$row['yachtclub']."</td>";
-		echo "<td>".$row['eigener']."</td>";
+		echo "<td>".$row['eigner']."</td>";
 		echo "<td style='display:none'>".$row['versicherung']."</td>";
 		echo "<td style='display:none'>".$row['rufzeichen']."</td>";
 		echo "<td>".$row['typ']."</td>";
@@ -29,7 +28,7 @@ function dynamic_view(){
 		echo "<td style='display:none'>".$row['tiefgang']."</td>";
 		echo "<td style='display:none'>".$row['masthoehe']."</td>";
 		echo "<td style='display:none'>".$row['verdraengung']."</td>";
-		echo "<td style='display:none'>".$row['fligArt']."</td>";
+		echo "<td style='display:none'>".$row['rigArt']."</td>";
 		echo "<td style='display:none'>".$row['baujahr']."</td>";
 		echo "<td style='display:none'>".$row['motor']."</td>";
 		echo "<td style='display:none'>".$row['tankgroesse']."</td>";
@@ -37,10 +36,10 @@ function dynamic_view(){
 		echo "<td style='display:none'>".$row['abwassertankgroesse']."</td>";
 		echo "<td style='display:none'>".$row['grosssegelgroesse']."</td>";
 		echo "<td style='display:none'>".$row['genuagroesse']."</td>";
-		echo "<td style='display:none'>".$row['SpiSizeSpiegroesse']."</td>";
+		echo "<td style='display:none'>".$row['spi']."</td>";
+		echo "<td><a style='text-decoration:none' href='../triplist_php_ajax/triplist.php?val=".$row['registernr']."'>Trips</a></td>";
 		echo "</tr>";
 	}
 	echo "</tbody></table>";
 	mysql_close($connection);
-}
 ?>

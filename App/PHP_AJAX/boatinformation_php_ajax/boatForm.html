@@ -1,130 +1,4 @@
-<?php	include("./dynamic_view.php"); ?>
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>BoatInfo</title>
-		<script type='text/javascript' src='./JS/dynamic_view.js'></script>
-		<script type="text/javascript" src="./JS/jquery-1.8.2.js"></script>
-		<script type="text/javascript">
-			$(function(){
-			$('#form').keyup(function (e){
-				if (e.keyCode==13){
-					var boat_values = new Array(
-						document.getElementById('registernr').value,
-						document.getElementById('bootsname').value,
-						document.getElementById('segelzeichen').value,
-						document.getElementById('heimathafen').value,
-						document.getElementById('yachtclub').value,
-						document.getElementById('eigener').value,
-						document.getElementById('versicherung').value,
-						document.getElementById('rufzeichen').value,
-						document.getElementById('typ').value,
-						document.getElementById('konstrukteur').value,
-						document.getElementById('laenge').value,
-						document.getElementById('breite').value,
-						document.getElementById('tiefgang').value,
-						document.getElementById('masthoehe').value,
-						document.getElementById('verdraengung').value,
-						document.getElementById('fligArt').value,
-						document.getElementById('baujahr').value,
-						document.getElementById('motor').value,
-						document.getElementById('tankgroesse').value,
-						document.getElementById('wassertankgroesse').value,
-						document.getElementById('abwassertankgroesse').value,
-						document.getElementById('grosssegelgroesse').value,
-						document.getElementById('genuagroesse').value,
-						document.getElementById('spi').value	
-					);
-					sendBoat(boat_values);
-								
-					}
-				});
-			});
-			
-			function sendBoat(boat_values){
-				$.ajax({
-					type: 'POST',
-					url: 'process.php',
-					data: {
-						'action' : 'insert',
-						'registernr' : boat_values[0],
-						'bootsname' : boat_values[1],
-						'segelzeichen' :  boat_values[2],
-						'heimathafen' :  boat_values[3],
-						'yachtclub' :  boat_values[4],
-						'eigener' :  boat_values[5],
-						'versicherung' :  boat_values[6],
-						'rufzeichen' :  boat_values[7],
-						'typ' :  boat_values[8],
-						'konstrukteur' :  boat_values[9],
-						'laenge' :  boat_values[10],
-						'breite' :  boat_values[11],
-						'tiefgang' :  boat_values[12],
-						'masthoehe' :  boat_values[13],
-						'verdraengung' :  boat_values[14],
-						'fligArt' :  boat_values[15],
-						'baujahr' :  boat_values[16],
-						'motor' :  boat_values[17],
-						'tankgroesse' :  boat_values[18],
-						'wassertankgroesse' :  boat_values[19],
-						'abwassertankgroesse' :  boat_values[20],
-						'grosssegelgroesse' :  boat_values[21],
-						'genuagroesse' :  boat_values[22],
-						'spi' :  boat_values[23]						
-					},
-					dataType : 'json',
-					success : update(),	
-				});
-			}
-			function update(){
-				reset_form();
-				
-				$.ajax({
-					url : './dynamic_view.php',
-					type : 'POST',
-					success : function(result){
-						alert(result);
-						$('#dynamic_view').html(result);
-					}
-				});
-						
-			}
-			
-			function reset_form(){
-				document.getElementById('registernr').value="";
-						document.getElementById('bootsname').value="";
-						document.getElementById('segelzeichen').value="";
-						document.getElementById('heimathafen').value="";
-						document.getElementById('yachtclub').value="";
-						document.getElementById('eigener').value="";
-						document.getElementById('versicherung').value="";
-						document.getElementById('rufzeichen').value="";
-						document.getElementById('typ').value="";
-						document.getElementById('konstrukteur').value="";
-						document.getElementById('laenge').value="";
-						document.getElementById('breite').value="";
-						document.getElementById('tiefgang').value="";
-						document.getElementById('masthoehe').value="";
-						document.getElementById('verdraengung').value="";
-						document.getElementById('fligArt').value="";
-						document.getElementById('baujahr').value="";
-						document.getElementById('motor').value="";
-						document.getElementById('tankgroesse').value="";
-						document.getElementById('wassertankgroesse').value="";
-						document.getElementById('abwassertankgroesse').value="";
-						document.getElementById('grosssegelgroesse').value="";
-						document.getElementById('genuagroesse').value="";
-						document.getElementById('spi').value="";
-			}	
-		</script>
-	</head>
-
-	<body>
-	
-		<h1>Boat Information</h1>
-		
-	<form id="form">
+<form id="form" action="./index.php" method="post">
 	<fieldset ><legend align="center">Logbuch</legend>  
 	<table cellspacing="10" cellpadding="10">
 		<tr><td><label for="bootsname">Bootsname:</label></td>
@@ -193,9 +67,9 @@
 			<span id="abwassertankgroesse_help"></span></td>
 		</tr>
 		<tr>
-			<td><label for="eigener">Eigener:</label></td>
-			<td><input type="text" name="eigener" id="eigener" tabindex="6" onblur="CheckPattern_Text(this, document.getElementById('eigener_help'))" />
-			<span id="eigener_help"></span></td>
+			<td><label for="eigner">Eigner:</label></td>
+			<td><input type="text" name="eigner" id="eigner" tabindex="6" onblur="CheckPattern_Text(this, document.getElementById('eigner_help'))" />
+			<span id="eigner_help"></span></td>
 			
 			<td><label for="masthoehe">Masthoehe:</label></td>
 			<td><input type="text" name="masthoehe" id="masthoehe" tabindex="14" onblur="CheckPattern_Decimal(this, document.getElementById('masthoehe_help'))" />
@@ -223,17 +97,14 @@
 			<td><input type="text" name="rufzeichen" id="rufzeichen" tabindex="8" onblur="CheckPattern_Rufzeichen(this, document.getElementById('rufzeichen_help'))" />
 			<span id="rufzeichen_help"></span></td>
 			
-			<td><label for="fligArt">Flig-Art:</label></td>
-			<td><input type="text" name="fligArt" id="fligArt" tabindex="16" onblur="CheckPattern_Text(this, document.getElementById('fligart_help'))" />
-			<span id="fligart_help"></span></td>
+			<td><label for="rigArt">Rig-Art:</label></td>
+			<td><input type="text" name="rigArt" id="rigArt" tabindex="16" onblur="CheckPattern_Text(this, document.getElementById('rigart_help'))" />
+			<span id="rigart_help"></span></td>
 			
 			<td><label for="spi">Spi size Spigroesse:</label></td>
 			<td><input type="text" name="spi" id="spi" tabindex="24" onblur="CheckPattern_Decimal(this, document.getElementById('spi_help'))" />
 			<span id="spi_help"></span></td>
 		</tr>	
-	</table>		
+	</table>
 	</fieldset>
-	</form>
-	<div id='dynamic_view'><?php dynamic_view(); ?></div>
-	</body>
-</html>
+</form>	
