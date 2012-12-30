@@ -4,6 +4,7 @@
 	<title>Trip Information</title>
 	<script type="text/javascript" src="./JS/tripinformation.js"></script>
 	<script type="text/javascript" src="./JS/jquery-1.8.2.js"></script>
+	<link rel="stylesheet" type="text/css" href="./JS/style.css">
 	<script type="text/javascript">
 	$(function(){
 		$('#form').keyup(function (e){
@@ -37,7 +38,8 @@
 <body>
 	<h1>Tripinformation</h1>
 <?php 
-	include("./tripForm.html");	 
+	include("./tripForm.html");
+
 	if (isset($_GET['val'])) {
 		include("./select_trip.php");
 		echo "<div id='dynamic_view'>";

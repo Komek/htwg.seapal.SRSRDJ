@@ -5,8 +5,8 @@
 	$select = "SELECT title,von,nach,skipper,start,ende,registernr FROM tripinformation WHERE registernr='$_GET[val]'";
     $result = mysql_query($select) or die ("MySQL ERROR: " . mysql_error());
 	
-	echo "	<table border='1' rules='groups' cellspacing='10' cellpadding='10' >
-			<thead><tr><th>Title</th><th>Von</th><th>Nach</th><th>Skipper</th><th>Start</th><th>Ende</th><th>Reg</th></tr></thead>
+	echo "	<table class='table1' rules='groups' cellspacing='10' cellpadding='10' >
+			<thead><tr><th>Title</th><th>Von</th><th>Nach</th><th>Skipper</th><th>Start</th><th>Ende</th><th>Zu dem Trip</th></tr></thead>
 			<tfoot>
 			<tr>
 				<td><input type='button' onclick='delete_entry();' value='Trip Loeschen'/></td>
@@ -15,7 +15,7 @@
 			</tfoot>
 			<tbody>	";
 	while ($row = mysql_fetch_array($result)) {
-		echo "<tr class='row' onclick='Change_Background(this);'>";
+		echo "<tr class='row' onclick='set_keys(this);'>";
 		echo "<td>".$row['title']."</td>";
 		echo "<td>".$row['von']."</td>";
 		echo "<td>".$row['nach']."</td>";

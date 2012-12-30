@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>BoatInfo</title>
+		<link rel="stylesheet" type="text/css" href="./JS/style.css">
 		<script type='text/javascript' src='./JS/boatinformation.js'></script>
 		<script type='text/javascript' src="./JS/jquery-1.8.2.js"></script>
 		<script type='text/javascript'>

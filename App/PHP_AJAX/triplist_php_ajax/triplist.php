@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Triplist</title>
+	<link rel="stylesheet" type="text/css" href="./JS/style.css">
 	<script type='text/javascript' src='./JS/triplist.js'></script>
 	<script type='text/javascript' src='./JS/jquery-1.8.2.js'></script>
 	<script type='text/javascript'>

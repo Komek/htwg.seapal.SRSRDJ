@@ -5,14 +5,14 @@
     						grosssegelgroesse,genuagroesse,spi FROM boatinformation";
     $result = mysql_query($select) or die ("MySQL ERROR: " . mysql_error());
 	
-	echo "	<table border='1' rules='groups' cellspacing='10' cellpadding='10' >
-			<thead><tr><th>Bootsname</th><th>Inhaber</th><th>Typ</th><th>Konstrukteur</th><th>Laenge</th></tr></thead>
+	echo "	<table class='table1' rules='groups' cellspacing='10' cellpadding='10' >
+			<thead><tr><th>Bootsname</th><th>Inhaber</th><th>Typ</th><th>Konstrukteur</th><th>Laenge</th><th>Zu den Trips</th></tr></thead>
 			<tfoot>
-			<tr><td colspan = 5><input type='button' onclick='delete_entry();' value='Ausgewaehlten Eintrag Loeschen'/></td></tr>
+			<tr><td ><input type='button' onclick='delete_entry();' value='Ausgewaehlten Eintrag Loeschen'/></td></tr>
 			</tfoot>
 			<tbody>	";
 	while ($row = mysql_fetch_array($result)) {
-		echo "<tr class='row' onclick='Change_Background(this);'>";
+		echo "<tr class='row' onclick='set_values(this);'>";
 		echo "<td>".$row['bootsname']."</td>";
 		echo "<td style='display:none'>".$row['registernr']."</td>";
 		echo "<td style='display:none'>".$row['segelzeichen']."</td>";

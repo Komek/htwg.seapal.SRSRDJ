@@ -3,12 +3,7 @@ function update_div(){
 	reset_form();
 }
 
-function Change_Background(tableRow){
-	for (var i = 0; i < document.getElementsByTagName("tr").length; i++) {
-	    document.getElementsByTagName("tr")[i].style.backgroundColor = "white";
-	}
-	tableRow.style.backgroundColor = "#00BFFF";
-
+function set_values(tableRow){
 	var nodes = tableRow.getElementsByTagName("td");
 	selected_row_key=nodes[1].innerHTML;
 	document.getElementById("bootsname").value = nodes[0].innerHTML;

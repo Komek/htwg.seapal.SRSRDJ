@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Entry Information</title>
+	<link rel="stylesheet" type="text/css" href="./JS/style.css">
 	<script type="text/javascript" src="./JS/entryinformation.js"></script>
 	<script type="text/javascript" src="./JS/jquery-1.8.2.js"></script>
 	<script type='text/javascript'>
@@ -21,10 +22,10 @@
 					document.getElementById('sog').value,
 					document.getElementById('btm').value,
 					document.getElementById('dtm').value,
-					//MARK FEHLT NOCH!!
-					document.getElementById('manoever').options[manoever.selectedIndex].text,
-					document.getElementById('vorsegel').options[vorsegel.selectedIndex].text,
-					document.getElementById('grosssegel').options[grosssegel.selectedIndex].text,
+					document.getElementById('fahrtnach').options[fahrtnach.selectedIndex].value,
+					document.getElementById('manoever').options[manoever.selectedIndex].value,
+					document.getElementById('vorsegel').options[vorsegel.selectedIndex].value,
+					document.getElementById('grosssegel').options[grosssegel.selectedIndex].value,
 					document.getElementById('notes').value
 				);
 				entry_send(entry);
@@ -48,10 +49,11 @@
 				'sog' : entry[9],
 				'btm' : entry[10],
 				'dtm' : entry[11],
-				'manoever' : entry[12],
-				'vorsegel' : entry[13],
-				'grosssegel' : entry[14],
-				'notes' : entry[15]					
+				'fahrtnach' : entry[12],
+				'manoever' : entry[13],
+				'vorsegel' : entry[14],
+				'grosssegel' : entry[15],
+				'notes' : entry[16]					
 			},
 			dataType : 'json',
 			success : function(data){

@@ -1,5 +1,5 @@
 <form name="form" id="form" action="./tripinformation.php" method="post">
-<fieldset>
+<fieldset><legend align="center">Logbuch</legend>
 <table cellspacing="10" cellpadding="10">
 	<tr>
 		<td style='display:none'><input type="text" name="registernr" id="registernr"/></td>
@@ -32,14 +32,18 @@
 		<td><input type="checkbox" name="tankgefuellt" id="tankgefuellt" tabindex="10"/></td>
 	</tr>	
 </table>
-
 </fieldset>
-<fieldset>
+	<div id='divnotes'>
+		<label for="notes">Notes:</label>
+		<textarea name="notes" id="notes" cols="40" rows="15"></textarea>
+	</div>
 
-<label for="notes">Notes:</label>
-<textarea name="notes" id="notes" cols="40" rows="15"></textarea>
-<div>DIV FUER SCREENSHOT DES TRIPS</div>
-<div>DIV FUER PHOTOS DES TRIPS</div>
+	<div id='divscreen'>
+		<img src="../TestScreenshot.png" alt="Screenshots">
+	</div>
+	<div id='divimage'>
+		<img src="../NoImage.png" alt="Bild">
+	</div>
 
-</fieldset>
+	
 </form>
