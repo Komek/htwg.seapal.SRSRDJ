@@ -9,10 +9,10 @@ table.table1{
 .table1 thead th{
     padding:15px;
     color:#fff;
-    text-shadow:1px 1px 1px #568F23;
+    text-shadow:1px 1px 1px #63B8FF;
     border:1px solid #93CE37;
     border-bottom:3px solid #9ED929;
-    background-color:#9DD929;
+    background-color:#63B8FF;
     background:-webkit-gradient(
         linear,
         left bottom,
@@ -39,8 +39,8 @@ table.table1{
 }
 .table1 tbody th{
     color:#fff;
-    text-shadow:1px 1px 1px #568F23;
-    background-color:#9DD929;
+    text-shadow:1px 1px 1px #63B8FF;
+    background-color:#63B8FF;
     border:1px solid #93CE37;
     border-right:3px solid #9ED929;
     padding:0px 10px;

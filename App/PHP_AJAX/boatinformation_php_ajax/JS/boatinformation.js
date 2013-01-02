@@ -59,6 +59,59 @@ function reset_form(){
 	document.getElementById('spi').value="";
 }
 
+function edit_Node(regex, input, helpId, helpMessage){
+	        // See if the visitor entered the right information
+	if (!regex.test(input)) {          // If the wrong information was entered, warn them
+		if (helpId != null)
+
+			while (helpId.firstChild) // Remove any warnings that may exist
+				helpId.removeChild(helpId.firstChild);
+			
+			helpId.appendChild(document.createTextNode(helpMessage)); // Add new warning
+			return false;
+		}
+
+		else {          // If the right information was entered, clear the help message
+			if (helpId != null){
+				while (helpId.firstChild) // Remove any warnings that may exist
+	
+					helpId.removeChild(helpId.firstChild);
+			}
+		return true;
+	}      
+}
+
+function regEx1(inputField, helpId) {			
+	return edit_Node(/[A-Za-z'\-\s]{2,30}/, inputField.value, helpId, "Ungültige Eingabe!");
+}
+
+function regEx2(inputField, helpId) {			
+	return edit_Node(/[\w]{2,30}/, inputField.value, helpId, "Ungültige Eingabe!");
+}
+function regEx3(inputField, helpId) {			
+	return edit_Node(/[\w]{1}/, inputField.value, helpId, "Ungültige Eingabe!");
+}
+function regEx4(inputField, helpId) {			
+	return edit_Node(/[A-Za-z\-\s]{2,30}/, inputField.value, helpId, "Ungültige Eingabe!");
+}
+function regEx5(inputField, helpId) {			
+	return edit_Node(/[\w'\-\s]{2,30}/, inputField.value, helpId, "Ungültige Eingabe!");
+}
+function regEx6(inputField, helpId) {			
+	return edit_Node(/[A-Za-z\-\s]{2,30}/, inputField.value, helpId, "Ungültige Eingabe!");
+}
+function regEx7(inputField, helpId) {			
+	return edit_Node(/[\d]{1,4}\,[\d]{2}/, inputField.value, helpId, "Ungültige Eingabe!");
+}
+function regEx8(inputField, helpId) {			
+	return edit_Node(/[\d]{1,4}/, inputField.value, helpId, "Ungültige Eingabe!");
+}
+
+function regEx9(inputField, helpId) {			
+	return edit_Node(/[\d]{2,4}/, inputField.value, helpId, "Ungültige Eingabe!");
+}
+
+
 
 				
 	
