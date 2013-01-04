@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>fu.server.BoatServiceImpl</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>selectBoatServlet</servlet-name>
+    <servlet-class>fu.server.SelectBoatServiceImpl</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteBoatServlet</servlet-name>
+    <servlet-class>fu.server.DeleteBoatServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/fu/greet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>selectBoatServlet</servlet-name>
+    <url-pattern>/fu/selectBoat</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteBoatServlet</servlet-name>
+    <url-pattern>/fu/deleteBoat</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Fu.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

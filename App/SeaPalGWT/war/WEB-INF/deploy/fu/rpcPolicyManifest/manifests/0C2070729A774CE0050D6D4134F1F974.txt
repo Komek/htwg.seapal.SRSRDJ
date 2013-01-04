@@ -1,0 +1,2 @@
+serviceClass: fu.client.SelectBoatService
+path: 628D24FC2972DBBA299221A3C6941A4D.gwt.rpc

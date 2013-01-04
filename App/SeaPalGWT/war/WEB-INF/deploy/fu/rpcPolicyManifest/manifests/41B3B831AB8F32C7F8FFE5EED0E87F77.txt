@@ -1,0 +1,2 @@
+serviceClass: fu.client.DeleteBoatService
+path: 3E4059AC337363114364393D98E3BAFE.gwt.rpc

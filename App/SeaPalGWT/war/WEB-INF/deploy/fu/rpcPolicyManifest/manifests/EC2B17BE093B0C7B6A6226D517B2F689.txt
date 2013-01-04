@@ -1,0 +1,2 @@
+serviceClass: fu.client.BoatService
+path: 3983A339A4C66CE9EA1AC1FDF83D73E0.gwt.rpc

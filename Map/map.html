@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>Map</title>
+		<style type="text/css">
+			html {
+				height: 100%;
+			}
+			body {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			#map_canvas {
+				height: 480px;
+				width: 720px;
+			}
+			#ausgabe, #entfernung {
+				float: right;
+			}
+
+		</style>
+		<script type="text/javascript" src="./jquery-1.8.2.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCneWH2oTmRpX93qQt1LvowQyULSGqbjSc&sensor=false" ></script>
+		<script type="text/javascript" src="./map.js"></script>
+
+	</head>
+	<body onload=initialize()>
+		<h1>Lat: <span id="lat">47.665</span>, Lan: <span id="long">9.185</span></h1>
+		<div id="ausgabe"></div>
+		<div id="entfernung">
+			Entfernung:
+		</div>
+		<div id="map_canvas"></div>
+		<div id="contextm">
+			<p>
+				<button id="bMarkeSetzen" style="display: none" class="allgMenu">
+					Marke setzen
+				</button>
+
+				<button id="bPolylines" style="display: none" class="allgMenu">
+					Polylines
+				</button>
+				<button id="bEntfernung" style="display: none" class="allgMenu">
+					Entfernung
+				</button>
+				<button id="bStart" style="display: none" class="markerOptions">
+					Route Start
+				</button>
+				<button id="bEnde" style="display: none" class="markerOptions">
+					Route Ende
+				</button>
+				<button id ="bLoeschen" style="display: none" class="markerOptions">
+					L&ouml;schen
+				</button>
+
+			</p>
+		</div>
+	</body>
+</html>
+<!--
+todo: Menu vervollständigen (mit Klassen?)
+-->

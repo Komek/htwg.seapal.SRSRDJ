@@ -1,0 +1,80 @@
+/** Add css rules here for your application. */
+
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #777777;
+  margin: 40px 0px 70px;
+  text-align: center;
+}
+
+.sendButton {
+  display: block;
+  font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+  width: 400px;
+}
+
+.dialogVPanel {
+  margin: 5px;
+}
+
+.serverResponseLabelError {
+  color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}
+/** -------------------------------------------------------------------------------------------------------------------------------------- */
+
+.th{
+    padding:15px;
+    color:#fff;
+    text-shadow:1px 1px 1px #009ac1;
+    border:1px solid #009ac1;
+    border-bottom:3px solid #00B9E8;
+    background-color:#00B9E8;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(0,185,223)),
+        color-stop(0.51, rgb(16,207,255)),
+        color-stop(0.87, rgb(134,230,255))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(0,185,232) 2%,
+        rgb(16,207,255) 51%,
+        rgb(134,230,255) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.tbtd{
+    padding:10px;
+    text-align:center;
+    background-color:#d4f6ff;
+    border: 2px solid #E7EFE0;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+.tc
+{
+	width: 155px;
+	height: 150px;
+}
+
