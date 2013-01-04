@@ -9,23 +9,23 @@ table.table1{
 .table1 thead th{
     padding:15px;
     color:#fff;
-    text-shadow:1px 1px 1px #63B8FF;
-    border:1px solid #93CE37;
-    border-bottom:3px solid #9ED929;
-    background-color:#63B8FF;
+    text-shadow:1px 1px 1px #009ac1;
+    border:1px solid #009ac1;
+    border-bottom:3px solid #00B9E8;
+    background-color:#00B9E8;
     background:-webkit-gradient(
         linear,
         left bottom,
         left top,
-        color-stop(0.02, rgb(123,192,67)),
-        color-stop(0.51, rgb(139,198,66)),
-        color-stop(0.87, rgb(158,217,41))
+        color-stop(0.02, rgb(0,185,223)),
+        color-stop(0.51, rgb(16,207,255)),
+        color-stop(0.87, rgb(134,230,255))
         );
     background: -moz-linear-gradient(
         center bottom,
-        rgb(123,192,67) 2%,
-        rgb(139,198,66) 51%,
-        rgb(158,217,41) 87%
+        rgb(0,185,232) 2%,
+        rgb(16,207,255) 51%,
+        rgb(134,230,255) 87%
         );
     -webkit-border-top-left-radius:5px;
     -webkit-border-top-right-radius:5px;
@@ -39,8 +39,8 @@ table.table1{
 }
 .table1 tbody th{
     color:#fff;
-    text-shadow:1px 1px 1px #63B8FF;
-    background-color:#63B8FF;
+    text-shadow:1px 1px 1px #568F23;
+    background-color:#d4f6ff;
     border:1px solid #93CE37;
     border-right:3px solid #9ED929;
     padding:0px 10px;
@@ -77,7 +77,7 @@ table.table1{
 .table1 tbody td{
     padding:10px;
     text-align:center;
-    background-color:#DEF3CA;
+    background-color:#d4f6ff;
     border: 2px solid #E7EFE0;
     -moz-border-radius:2px;
     -webkit-border-radius:2px;
@@ -94,5 +94,10 @@ h1{
 }
 body{
 	font-family: "Trebuchet MS", sans-serif;
+	
+}
+.row{
+	 cursor: pointer;
+	
 }
 

@@ -9,7 +9,7 @@ table.table1{
 .table1 thead th{
     padding:15px;
     color:#fff;
-    text-shadow:1px 1px 1px #009ac1;
+    text-shadow:1px 1px 1px ##009ac1;
     border:1px solid #009ac1;
     border-bottom:3px solid #00B9E8;
     background-color:#00B9E8;
@@ -91,6 +91,40 @@ table.table1{
 h1{
 	font-family: "Trebuchet MS", sans-serif;
 	text-align:center;
+}
+body{
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+
+#divimage{
+	position: absolute;
+	float: left;
+	top: 380px;
+	left: 10px;
+	width: 200px;
+	height: 200px;
+}
+#divnotes{
+	position: absolute;
+	float: left;
+	top: 360px;
+	left: 400px;
+	width: 200px;
+	height: 200px;
+}
+#divscreen{
+	position: absolute;
+	float: left;
+	top: 380px;
+	left: 800px;
+	width: 200px;
+	height: 200px;
+}
+#entry_table{
+	position: absolute;
+	float: left;
+	top: 720px;
 }
 .row{
 	 cursor: pointer;

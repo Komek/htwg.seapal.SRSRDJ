@@ -9,7 +9,7 @@ table.table1{
 .table1 thead th{
     padding:15px;
     color:#fff;
-    text-shadow:1px 1px 1px #009ac1;
+    text-shadow:1px 1px 1px ##009ac1;
     border:1px solid #009ac1;
     border-bottom:3px solid #00B9E8;
     background-color:#00B9E8;
