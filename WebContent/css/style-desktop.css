@@ -183,9 +183,9 @@
 }
 
 #content img {
-	padding: 2em 0em 2em 0em;
+	padding: 2em 0em 0em 0em;
 	position:relative;
-	left: 50px;
+	left: 0px;
 }
 
 #content a img {

@@ -14,7 +14,7 @@
 				<div class="9u">
 					<div class="mobileUI-main-content" id="content">
 						<section>
-							<div class="post">
+							<div class="post" >
 								<a name="About_SeaPal"><h2>About SeaPal</h2></a>
 								
 								<p>The SeaPal application was developed in a cooperation between the IBN publishing house and the HTWG Constance University.</p>

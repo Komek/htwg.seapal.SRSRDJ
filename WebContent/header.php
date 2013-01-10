@@ -8,11 +8,14 @@
 
 <html>
 <head>
+
+
+
 <title>SeaPal - <?php echo $name; ?>
 </title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
+<meta name="description" content="SeaPal" />
+<meta name="keywords" content="SeaPal" />
 <noscript>
 	<link rel="stylesheet" href="css/5grid/core.css" />
 	<link rel="stylesheet" href="css/5grid/core-desktop.css" />
@@ -20,10 +23,8 @@
 	<link rel="stylesheet" href="css/5grid/core-noscript.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/style-desktop.css" />
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	
-
 </noscript>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <script src="css/5grid/jquery.js"></script>
 <script	src="css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
 
@@ -57,7 +58,8 @@
 											"userguide.php" => "User Guide",
 											"screenshots.php" => "Screenshots",
 											"about.php" => "About",
-											"contact.php" => "Contact"
+											"contact.php" => "Contact",
+											"demo.php"=>"Demo"
 										 );
 
 
@@ -72,15 +74,6 @@
 							}
 
 							?>
-
-
-								<!--<li class="current_page_item"><a href="index.php">Homepage</a></li>
-							<li><a href="index.php">Homepage</a></li>
-							<li><a href="userguiede.php">User Guide</a></li>
-							<li><a href="screenshoots.php">Screenshots</a></li>
-							<li><a href="about.php">About</a></li>
-							<li><a href="contact.php">Contact</a></li>
-							-->
 
 							</ul>
 						</nav>

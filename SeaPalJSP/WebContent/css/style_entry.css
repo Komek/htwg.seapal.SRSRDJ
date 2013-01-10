@@ -1,0 +1,27 @@
+h1{
+	font-family: "Trebuchet MS", sans-serif;
+	text-align:center;
+}
+body{
+	font-family: "Trebuchet MS", sans-serif;
+}
+#divimage{
+	position: absolute;
+	float: left;
+	top: 303px;
+	left: 10px;
+}
+#divnotes{
+	position: absolute;
+	float: left;
+	top: 280px;
+	left: 270px;
+	width: 200px;
+	height: 200px;
+}
+#divscreen{
+	position: absolute;
+	float: left;
+	top: 303px;
+	left: 550px;
+}

@@ -1,0 +1,49 @@
+<form name="form" id="form" action="./tripinformation.php" method="post">
+<fieldset><legend align="center">Logbuch</legend>
+<table>
+	<tr>
+		<td style='display:none'><input type="text" name="registernr" id="registernr"/></td>
+		<td><label for="triptitle">Trip Title:</label></td>
+		<td><input type="text" name="triptitle" id="triptitle" tabindex="1" onblur="regEx1(this, document.getElementById('triptitle'))"/></td>
+		
+	</tr>
+	<tr>
+		<td><label for="von">Von:</label></td>
+		<td><input type="text" name="von" id="von" tabindex="2" onblur="regEx1(this, document.getElementById('von'))"/></td>
+		<td rowspan = "3"><label for="crew">Crew:</label></td>
+		<td rowspan = "3"><textarea name="crew" cols="20" rows="5" tabindex="5" id="crew"></textarea></td>
+		<td><label for="start">Start:</label></td>
+		<td><input type="text" name="start" id="start" tabindex="6" onblur="regEx3(this, document.getElementById('start'))"/></td>
+	</tr>
+	<tr>
+		<td><label for="nach">Nach:</label></td>
+		<td><input type="text" name="nach" id="nach" tabindex="3" onblur="regEx1(this, document.getElementById('nach'))"/></td>
+		<td><label for="ende">Ende:</label></td>
+		<td><input type="text" name="ende" id="ende" tabindex="7" onblur="regEx3(this, document.getElementById('ende'))"/></td>
+		<td><label for="motor">Motor(min):</label></td>
+		<td><input type="text" name="motor" id="motor" tabindex="9" onblur="regEx5(this, document.getElementById('motor'))"/></td>
+	</tr>	
+	<tr>
+		<td><label for="skipper">Skipper:</label></td>
+		<td><input type="text" name="skipper" id="skipper" tabindex="4" onblur="regEx2(this, document.getElementById('skipper'))"/></td>
+		<td><label for="dauer">Dauer:</label></td>
+		<td><input type="text" name="dauer" id="dauer" tabindex="8" onblur="regEx4(this, document.getElementById('dauer'))"/></td>
+		<td><label for="tankgefuellt">Tank gefuellt?</label></td>
+		<td><input type="checkbox" name="tankgefuellt" id="tankgefuellt" tabindex="10"/></td>
+	</tr>	
+</table>
+</fieldset>
+	<div id='divnotes'>
+		<label for="notes">Notes:</label>
+		<textarea name="notes" id="notes" cols="30" rows="15"></textarea>
+	</div>
+
+	<div id='divscreen'>
+		<img src="../TestScreenshot.png" alt="Screenshots" width="350" height="250">
+	</div>
+	<div id='divimage'>
+		<img src="../NoImage.png" alt="Bild" width="250" height="250">
+	</div>
+
+	
+</form>

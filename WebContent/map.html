@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale:1.0, user-scalable=no">
+<title>Google Map</title>
+<style type="text/css">
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#map_canvas {
+	height: 550px;
+	width: 750px;
+	float: left;
+	position: absolute;
+}
+
+input.groovybutton {
+	position: relative;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	border-color: #3399FF;
+	display: block;
+	padding: 5px;
+	margin: 10px 0px 5px 10px;
+	width: 150px;
+}
+
+#menueTmp,#menueMarker, #menueRoute  {
+	position: absolute;
+	top: 275px;
+	left: 770px;
+}
+
+</style>
+<script type="text/javascript">
+	function goLite(FRM, BTN) {
+		window.document.forms[FRM].elements[BTN].style.backgroundColor = "#3399CC";
+		window.document.forms[FRM].elements[BTN].style.borderStyle = "double";
+		window.document.forms[FRM].elements[BTN].style.borderColor = "#FF6600";
+	}
+
+	function goDim(FRM, BTN) {
+		window.document.forms[FRM].elements[BTN].style.backgroundColor = "";
+		window.document.forms[FRM].elements[BTN].style.borderStyle = "";
+		window.document.forms[FRM].elements[BTN].style.borderColor = "#3399FF";
+	}
+</script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript"
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH9KE6yoJ7VpLOHt_aNe69-VRpRnXDNUk&sensor=false"></script>
+<script type="text/javascript" src="js/map.js"></script>
+
+</head>
+
+
+<body onload="initialize()">
+	<h1>
+		<span id="lat">Lat 47&deg;39.0'N</span><span id="long"> Lng
+			009&deg;19.0'E</span>
+	</h1>
+	<div id="menueTmp" style="display: none;">
+		<form name="formEins">
+			<input type="button" name="markierung" class="groovybutton"
+				value="Markierung setzen"
+				onMouseOver="goLite(this.form.name,this.name)"
+				onMouseOut="goDim(this.form.name,this.name)" id="setMarker">
+			<input type="button" name="route" class="groovybutton"
+				value="Route setzen" onMouseOver="goLite(this.form.name,this.name)"
+				onMouseOut="goDim(this.form.name,this.name)" id="setRoute">
+			<input type="button" name="entfernung" class="groovybutton"
+				value="Entfernung" onMouseOver="goLite(this.form.name,this.name)"
+				onMouseOut="goDim(this.form.name,this.name)" id="getDistance">
+		</form>
+	</div>
+	<div id="menueMarker" style="display: none;">
+		<form name="formZwei">
+			<input type="button" name="loeschen" class="groovybutton"
+				value="Loeschen" onMouseOver="goLite(this.form.name,this.name)"
+				onMouseOut="goDim(this.form.name,this.name)" id="loeschen">
+		</form>
+	</div>
+	<div id="menueRoute" style="display: none;">
+		<form name="formDrei">
+			<input type="button" name="loeschen" class="groovybutton"
+				value="Loeschen" onMouseOver="goLite(this.form.name,this.name)"
+				onMouseOut="goDim(this.form.name,this.name)" id="loeschenRoute">
+		</form>
+	</div>
+	<div id="map_canvas""></div>
+
+	<button id="setMarker" style="display: none;" class="menue">Marke
+		setzen</button>
+
+</body>
+</html>

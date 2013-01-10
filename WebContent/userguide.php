@@ -26,7 +26,7 @@
 								<p>The map is centered at your current location. You can now pan and zoom by swiping with your finger or pinching with two fingers.</p>
 
 								<img src="images_userguide/SeaPal-InitialPosition.jpg" alt="SeaPal-InitialPosition" width="580" height="435">
-
+								<br><br>
 								<a name="Map_Selection"><h2>Map Selection</h2></a>
 								<p>The map view initially shows maps from Google Maps. This is convenient because it downloads fast and is familiar to most. It is excellent for overview and orientation, but it is not very good for navigational purposes. These maps were created primarily for navigation with cars and not with sailors in mind. The shore line and especially harbors can be very imprecise. So you should know how to switch to different map views. For this, tap on the menu button at the top left.</p>
 

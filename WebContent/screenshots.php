@@ -17,72 +17,40 @@ include("header.php");
 
 						<section>
 							<div class="post">
-								<a name="SeaPal_iPad"><h2>SeaPal on the iPad</h2> </a>
-								
-								
-
-
-
-								<a name="Map_Selection"><h2>Map Selection</h2> </a>
-								<p>The map view initially shows maps from Google Maps. This is
-									convenient because it downloads fast and is familiar to most.
-									It is excellent for overview and orientation, but it is not
-									very good for navigational purposes. These maps were created
-									primarily for navigation with cars and not with sailors in
-									mind. The shore line and especially harbors can be very
-									imprecise. So you should know how to switch to different map
-									views. For this, tap on the menu button at the top left.</p>
-
-								<img src="images_userguide/SeaPal-Gothenborg-Menu.jpg"
-									alt="SeaPal-Gothenborg-Menu" width="580" height="435">
-
-								<p>From this menu, you can select several map views:</p>
-								<ul>
-									<li>Google Maps</li>
-									<li>Google Satellite view</li>
-									<li>Open Sea Maps</li>
-									<li>Offline Maps</li>
-								</ul>
-								<p>The Google Satellite view is excellent for near shore or
-									in-harbor manovering. Mind you though, this view shows
-									excellent physical detail of the shore and can also give you
-									some indication on the underwater surface from shades of blue.
-									But you do not have sea signals or depth information.</p>
-
-								<img src="images_userguide/SeaPal-SatelliteView.jpg"
-									alt="SateliteView" width="580" height="435">
-
-								<p>The OpenSeaMap view is very good for navigation. It is also
-									provided free of charge from the Open Street Map project, but
-									was created for sailing and navigation. It contains sea signals
-									and has more details on shore line. However, it does not have
-									depth information, which can be very vital if you are not
-									familiar with the area. Also, this map view loads slower and
-									uses more calculation power on the mobile device. So you might
-									find you iPad a little slower with this view on. The accuracy
-									is not guaranteed, information is collected by an open
-									community and can be incorrect. Also keep in mind that this is
-									a vector map, the level of detail increases when zooming in.
-									This means some details will not be visible when zoomed out.</p>
-
-								<img src="images_userguide/SeaPal-Southampton-OSM.jpg"
-									alt="OpenSeaMapView" width="580 height="435">
-
-								<p>The biggest problem with all of the above is that they are
-									only available online. That is you need to have an internet
-									connection to view them. If you have a cellular built into your
-									device with 3G or 4G connection, this might be good enough for
-									you if you only sail close to shore or in-shore. However, we
-									recommend to download offline maps prior to departure.</p>
-								<br>
-								<p>Offline maps are excellent for navigation. They are always
-									available (as long as your battery does not run out), have
-									excellent sea signal information and show water depth. You can
-									purchase offline maps for selected areas from the AddOn view.
-									The first supported area is the Lake Constance for which maps
-									are provided by IBN. Other areas should follow soon.</p>
-								<img src="images_userguide/SeaPal-Konstanz-IBN.jpg"
-									alt="OfflineMapIBN" width="580" height="435">
+								<a name="SeaPal_iPad"><h2>SeaPal on the iPad</h2></a>
+								<figure><img src="images_screenshots/SeaPal-InitialPosition.jpg" alt="SeaPal-InitialPosition" width="580" height="435"/><figcaption>Map view with current position, initial view. </figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-Gothenborg-Menu.jpg" alt="SeaPal-Gothenborg-Menu"width="580" height="435"/><figcaption>Menu selected.</figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-Gothenborg-Tools.jpg" alt="SeaPal-Gothenborg-Tools" width="580" height="435"><figcaption>Tools selected.</figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-Gothenborg-OSM.jpg" alt="SeaPal-Gothenborg-OSM" width="580" height="435"><figcaption>Map view with OpenSeaMap showing Gothenburg.</figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-SatelliteView.jpg" alt="SeaPal-SatelliteView" width="580" height="435"/><figcaption>Satellite view</figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-Satellite-Closeup.jpg" alt="SeaPal-Satellite-Closeup" width="580" height="435"><figcaption>Satellite view - Close-up.</figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-Southampton-OSM.jpg" alt="SeaPal-Southampton-OSM" width="580" height="435"/><figcaption>Map view with OpenSeaMap showing Southampton.</figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-Konstanz-IBN.jpg" alt="SeaPal-Konstanz-IBN" width="580" height="435"/><figcaption>Offline map from IBN</figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-POI-Search.jpg" alt="SeaPal-POI-Search" width="435" height="580"><figcaption>Searching for Points of Interest</figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-POI-Harborinfo.jpg" alt="SeaPal-POI-Harborinfo" width="435" height="580"><figcaption>Points of Interest: Info for a Harbour</figcaption></figure>
+								<br><br>
+								<a name="tools"><h2>SeaPal Tools</h2></a>
+								<figure><img src="images_screenshots/SeaPal-RouteTool.jpg" alt="SeaPal-RouteTool" width="580" height="435"><figcaption>The Route Tool - Melbourne to Sydney. </figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-RouteTool-OSM.jpg" alt="SeaPal-RouteTool-OSM" width="580" height="435"><figcaption>The Route Tool - Close-up in Sydney. </figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-DistanceTool.jpg" alt="SeaPal-DistanceTool" width="580" height="435"><figcaption>The Distance Tool - Miami to Montego Bay is about 755 nm. </figcaption></figure>
+								<br><br>
+								<a name="inplace"><h2>SeaPal In-Place-Tools</h2></a>
+								<figure><img src="images_screenshots/SeaPal-Longtouch.jpg" alt="SeaPal-Longtouch" width="580" height="435"><figcaption>A Longtouch brings up bearing and distance to that point from the current position. </figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-InPlace-Tools.jpg" alt="SeaPal-InPlace-Tools" width="580" height="435"><figcaption>Another touch brings up a menu for in-place tools. </figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-Mark.jpg" alt="SeaPal-Mark" width="580" height="435"><figcaption>This allows quick creation of Marks, for example. </figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-InPlace-Tools.jpg" alt="SeaPal-InPlace-Tools" width="580" height="435"><figcaption>Marks again have a context menu. </figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-Target.jpg" alt="SeaPal-Target" width="580" height="435"><figcaption>Marks can be made the target, bearing and distance are displayed at the top. </figcaption></figure>				
+								<br><br>
+								<a name="logbook"><h2>SeaPal Logbook and Tracking</h2></a>
+								<figure><img src="images_screenshots/SeaPal-Tracking.jpg" alt="SeaPal-Tracking" width="580" height="435"><figcaption>The Tracking Tool. </figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-Boat.jpg" alt="SeaPal-Boat" width="580" height="435"><figcaption>The Logbook view with Boat info. </figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-Logbook.jpg" alt="SeaPal-Logbook" width="580" height="435"><figcaption>The Logbook view for a Trip. </figcaption></figure>	
+								<br><br>
+								<a name="iphone"><h2>SeaPal on the iPhone</h2></a>
+								<figure><img src="images_screenshots/SeaPal-iPhone-LaCoruna.jpg" alt="SeaPal-iPhone-LaCoruna" width="218" height="292"><figcaption>SeaPal on the iPhone - horizontal</figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-iPhone-wide.jpg" alt="SeaPal-iPhone-wide" width="292" height="218"><figcaption>SeaPal on the iPhone - vertical</figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-iPhone-Tools.jpg" alt="SeaPal-iPhone-Tools" width="218" height="292"><figcaption>SeaPal on the iPhone - Tools</figcaption></figure>
+								<figure><img src="images_screenshots/SeaPal-iPhone-Menu.jpg" alt="SeaPal-iPhone-Menu" width="218" height="292"><figcaption>SeaPal on the iPhone - Tools</figcaption></figure>		
 							</div>
 						</section>
 					</div>
@@ -91,17 +59,12 @@ include("header.php");
 					<section>
 						<h2>Quick Access</h2>
 						<ul class="style7">
-							<li class="first"><a href="userguide.php#Installing_SeaPal">Installing
-									SeaPal</a>
+							<li class="first"><a href="screenshots.php#SeaPal_iPad">SeaPal on the iPad</a></li>
+							<li><a href="screenshots.php#tools">SeaPal Tools</a></li>
+							<li><a href="screenshots.php#inplace">SeaPal In-Place-Tools</a></li>
+							<li style="border-bottom: none;"><a href="screenshots.php#iphone">SeaPal on the iPhone</a>
 							</li>
-							<li><a href="userguide.php#Starting_SeaPal">Starting SeaPal</a>
-							</li>
-							<li><a href="userguide.php#Map_Selection">Map Selection</a>
-							</li>
-							<li style="border-bottom: none;"><a
-								href="http://seapal.info/images/Legend-IBN-Map.pdf"
-								target="_blank">Legend of IBN Map</a>
-							</li>
+							
 						</ul>
 					</section>
 				</div>
