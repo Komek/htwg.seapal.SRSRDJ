@@ -1,3 +1,5 @@
-Sea entspricht der PLAY lösung.
+Sea entspricht der PLAY lï¿½sung.
 
-Pfade müssen ggf. angepasst werden.
+Pfade mï¿½ssen ggf. angepasst werden.
+
+Map im WebContent
